@@ -8,7 +8,7 @@
   line-height: 1.5;
   scroll-behavior: smooth;
   color-scheme: light dark;
-  color: #eae5ec;
+  color: var(--textColor);
   background-color: var(--backgroundColor);
 
   font-synthesis: none;
@@ -18,8 +18,17 @@
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  --accentColor: #c2a4ff;
-  --backgroundColor: #0b080c;
+  --accentColor: #d8a24a;
+  --accentStrong: #f1c97a;
+  --secondaryAccent: #78b8ad;
+  --textColor: #f2eee6;
+  --mutedText: #9ca7ac;
+  --backgroundColor: #0d1418;
+  --backgroundDeep: #081015;
+  --surfaceColor: #172126;
+  --borderColor: #2b3840;
+  --glowPrimary: rgba(216, 162, 74, 0.38);
+  --glowSecondary: rgba(120, 184, 173, 0.24);
   --vh: 100vh;
   --vh: 100svh;
 }
@@ -58,7 +67,11 @@ main {
 body {
   margin: 0;
   height: auto;
-  background-color: #000;
+  background-color: var(--backgroundColor);
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(216, 162, 74, 0.08), transparent 24%),
+    radial-gradient(circle at 82% 12%, rgba(120, 184, 173, 0.08), transparent 20%),
+    linear-gradient(180deg, var(--backgroundColor), var(--backgroundDeep) 70%);
   flex-grow: 1;
   --cWidth: calc(100% - 30px);
   --cMaxWidth: 1920px;

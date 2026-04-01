@@ -33,7 +33,7 @@
   flex-direction: column;
   width: 600px;
   box-sizing: border-box;
-  border-right: 1px solid #363636;
+  border-right: 1px solid var(--borderColor);
   flex-shrink: 0;
   gap: 50px;
   justify-content: start;
@@ -46,7 +46,7 @@
   content: "";
   width: calc(50000vw);
   height: 1px;
-  background-color: #363636;
+  background-color: var(--borderColor);
   position: absolute;
   left: 50%;
   top: 0;
@@ -78,7 +78,7 @@
 }
 .work-info p {
   font-weight: 200;
-  color: #adacac;
+  color: var(--mutedText);
   margin: 0;
   margin-top: 3px;
 }
@@ -118,8 +118,8 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5),
-    inset 0px 0px 10px 0px #393939;
+  box-shadow: 0px 0px 14px 0px rgba(216, 162, 74, 0.2),
+    inset 0px 0px 10px 0px rgba(255, 255, 255, 0.06);
   transition: 0.3s;
   opacity: 0;
 }
@@ -135,7 +135,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: var(--backgroundDeep);
   object-fit: cover;
 }
 .work-image img {
